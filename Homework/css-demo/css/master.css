@@ -1,0 +1,25 @@
+<style>
+h1 {
+  color: red;
+  font size: 32px;
+  font-family:arial;
+  letter-spacing: 2px;
+}
+a{
+  color: green;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+p {
+  background: pink;
+  margin-top: 0;
+  font-size: 18px;
+}
+.venus {
+  background: brown;
+  color: white;
+}
+</style>
