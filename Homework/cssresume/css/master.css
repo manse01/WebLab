@@ -1,0 +1,34 @@
+
+#name{
+font-size: 40px;
+color: #b0e0e6;
+}
+#name:hover{
+  background-color: black;
+}
+#work {
+  color: gray;
+}
+#school{
+  color: gray;
+}
+.head {
+  color: white;
+  font-family: 'Mukta Mahee', sans-serif;
+  background: #b0e0e6;
+
+}
+.mini-head{
+  color: black;
+
+  font-family: 'Mukta Mahee', sans-serif;
+}
+a:hover {
+    background-color: green
+}
+a {
+    color: black;
+}
+a:link {
+    text-decoration: none;
+}
