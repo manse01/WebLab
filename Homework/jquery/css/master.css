@@ -1,0 +1,22 @@
+.box {
+  background-color: : Red;
+  margin: 15px;
+  width: 300px;
+
+}
+.box-bob{
+  border-radius: 5px;
+  border: 5px;
+  paddong:12px;
+  color: #fff;
+  font-size: 22px;
+
+}
+.box-big{
+  border-radius: 5px;
+  border: 5px;
+  paddong:12px;
+  color: #fff;
+  font-size: 22px;
+
+}

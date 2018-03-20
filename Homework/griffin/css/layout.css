@@ -16,8 +16,13 @@ body {
 }
 .main-nav {
   grid-area: nav;
-  background color: Orange;
-  a:hover
+  background: white;
+  color: green;
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+
   }
 }
 .side {
@@ -30,6 +35,22 @@ body {
   grid-area: footer;
 }
 
+
+
+
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #555;
+    flex-direction: column;
+  }
+}
+
+}
+li a:hover {
+    background-color: #000080;
+}
 
 /* Mobile Layout */
 
@@ -58,14 +79,6 @@ body {
       "sidebar content"
       "ad      footer";
   }
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-/* Desktop layout */
-
 
 @media (min-width: 700px) {
   .wrapper {
@@ -76,9 +89,7 @@ body {
       "nav    content ad"
       "footer footer  footer"
    }
-   nav ul {
-     flex-direction: column;
-   }
+
 }
 h1 {
   color: green;
