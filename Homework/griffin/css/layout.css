@@ -24,7 +24,7 @@ body {
     width: 200px;
 
   }
-}
+
 .side {
   grid-area: sidebar;
 }
@@ -45,11 +45,11 @@ body {
     border: 1px solid #555;
     flex-direction: column;
   }
-}
 
-}
+
+
 li a:hover {
-    background-color: #000080;
+    background-color: black;
 }
 
 /* Mobile Layout */
@@ -93,7 +93,7 @@ li a:hover {
 }
 h1 {
   color: green;
-  font size: 32px;
+  size: 32px;
   font-family:sans-serif;
   letter-spacing: 2px;
 }
@@ -110,7 +110,7 @@ h2 {
 }
 aside{
   color: green;
-  font size: 16px;
+  size: 16px;
   font-family:arial;
   letter-spacing: 2px;
 
