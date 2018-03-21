@@ -93,7 +93,7 @@ li a:hover {
 }
 h1 {
   color: green;
-  size: 32px;
+  font-size: 32px;
   font-family:sans-serif;
   letter-spacing: 2px;
 }
@@ -110,11 +110,12 @@ h2 {
 }
 aside{
   color: green;
-  size: 16px;
+  font-size: 16px;
   font-family:arial;
   letter-spacing: 2px;
 
 }
 p {
   font-family: arial
+}
 }
