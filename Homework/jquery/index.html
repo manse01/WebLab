@@ -2,45 +2,47 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Jquery Demo</title>
-    <link rel="stylesheet" href="/css/master.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+    <title>The Journey of Becoming a Doctor</title>
+    <link rel="stylesheet" href="css/master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
-
+    <h1 id="Title">Welcome to your Journey of Becoming a Practicing Physician </h1>
+    <p id="content">Think you have what it takes?</p>
 <div class="box">
-  My box is cool!
 
+  <img src= "images/photo 1.jpeg" class="student1" >
 </div>
 <br>
-<a href="#" id=sam> Click Sam! </a> | <a href="#" id="bob">Click Bob!</a> | <a href="#" id="jane"> Hide and Show</a> | <a href="#" id="mary" </a>
+<a href="#" id="HighSchool">Go to Secondary School! </a> | <a href="#" id="College">See What Lies for You in College</a> | <a href="#" id="College">Med School</a> | <a href="#" id="College">Finish</a>
+<br>
+ <a href="#" id="jane">Hide</a> | <a href="#" id="mary">Show</a>
+<br><br>
+<img src="images/pup.jpg" alt="puppy" id="pup">
+ <script type="text/javascript">
+ $(document).ready(function(){
+     // $(".box").css("background", "blue");
+     $("#HighSchool").click(function(){
+       $(".box").removeClass( "box-bob" );
+       $(".box").addClass( "box-big" );
+       $(".box").html("Now that you have started your journey,<br><br> your mind may not be thinking about the future that lies ahead of you. You do always have the option of quitting, but the key during this journey is to never quit and to most importantly never give up.");
 
-<script type="text/javascript">
-$(document).ready(function)(){
-  //$(".box")..css("background", "blue");
-  $("#Sam").click(function()L{
-    $(".box").removeclass ("box-bob");
-    $(".box").addClass ("box-big");
-    $(".box").html("Woohoo you clicked Sam!");
-  })
 
-$("#bob").click(function(){
-  $(".box").removeClass ("box-big");
-  $(".box").addClass("box-bob");
-  $(".box").html("Woohoo you clicked Bob!");
-
-})
-$("#jane").click(function(){
-  $(".box").fadeOut (1000);
-  $("#pup").attr("src","images/l")
-});
-
-$("#mary").click(function(){
-  $("box").fadein (4000)
-})
-
-});
-
-</script>
+     })
+     $("#Undergrad").click(function(){
+       $(".box").removeClass( "box-big" );
+       $(".box").addClass( "box-bob" );
+       $(".box").html("Undergraduate");
+     })
+     $("#jane").click(function(){
+       $(".box").hide();
+       $("#pup").attr("src","images/lep.jpg");
+     });
+     $("#mary").click(function(){
+       $(".box").show();
+     });
+     // $("#dummyimage").attr("src","http://dummyimage.com/450x255/");
+      });
+ </script>
   </body>
 </html>
