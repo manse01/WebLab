@@ -4,36 +4,62 @@
     <meta charset="utf-8">
     <title>The Journey of Becoming a Doctor</title>
     <link rel="stylesheet" href="css/master.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   </head>
-  <body>
-    <h1 id="Title">Welcome to your Journey of Becoming a Practicing Physician </h1>
-    <p id="content">Think you have what it takes?</p>
+
+  <body background="images/Photo 1.jpeg">
+
+    <h1 id="Title"> So here you are, you want to become a doctor? <br> There's a whole lot of work that is involved. </h1>
+    <p id="content">Welcome to your Journey of Becoming a Practicing Physician</p>
 <div class="box">
 
-  <img src= "images/photo 1.jpeg" class="student1" >
+<img src="images/HighSchoolStudent.jpeg" width="100" height="200" class="center">
+<br>
+Wow. Brave You. You want to wear that prestigious white coat.
+<br>
+I wish you the best of luck on your lifelong journey.
+<br><br>
+To continue, use the next arrows at the bottom of the screen, or you can skip around (not recommended) by using the navigation.
 </div>
 <br>
-<a href="#" id="HighSchool">Go to Secondary School! </a> | <a href="#" id="College">See What Lies for You in College</a> | <a href="#" id="College">Med School</a> | <a href="#" id="College">Finish</a>
+<a href="#" class="HighSchool">Go to Secondary School! </a> | <a href="#" class="College">See What Lies for You in College</a> | <a href="#" class="Medschool">Med School</a> | <a href=# class="End"> End </a>
 <br>
- <a href="#" id="jane">Hide</a> | <a href="#" id="mary">Show</a>
+ <a href="#" class="Hide">Hide</a> | <a href="#" class="Show">Show</a>
 <br><br>
-<img src="images/pup.jpg" alt="puppy" id="pup">
+
+
+<a href="#" class="previous round, HighSchool, College, MedSchool, Finish">&#8249;</a>
+<a href="#" class="next round, HighSchool, College, MedSchool, Finish">&#8250;</a>
+
+
  <script type="text/javascript">
  $(document).ready(function(){
      // $(".box").css("background", "blue");
-     $("#HighSchool").click(function(){
+     $(".HighSchool").click(function(){
        $(".box").removeClass( "box-bob" );
        $(".box").addClass( "box-big" );
-       $(".box").html("Now that you have started your journey,<br><br> your mind may not be thinking about the future that lies ahead of you. You do always have the option of quitting, but the key during this journey is to never quit and to most importantly never give up.");
-
+       $(".box").html("Now that you have started your journey, your mind may not be thinking about the future that lies ahead of you. You do always have the option of quitting, but the key during this journey is to never quit and to most importantly never give up.<br><br> Things to do in High School: <ul> <li>Talk to a Guidance Counselor </li> <li> Have a Science teacher as a mentor </li> <li> Get involved extracurricularly</li> <li> Take AP Biology to see if life sciences are right for you </li> <li> Talk to your college counselor to ensure your choosing a school with a good pre-med program </li> </ul> <br> <br>Embark on your college experience by clicking next! ");
 
      })
-     $("#Undergrad").click(function(){
+     $(".College").click(function(){
        $(".box").removeClass( "box-big" );
-       $(".box").addClass( "box-bob" );
-       $(".box").html("Undergraduate");
+       $(".box").addClass( "box-big" );
+       $(".box").html("Major in whatever you want! This your last opportunity to learn what you want to learn in school. There are certain classes that all students looking to gain entrance to medical school have to take. These are called the pre-requisites, or commonly known as the 'weed outs.' <br> <ul> Pre requisities: <li> Two semesters of General Biology + Lab </li> <li> Two semesters of General Chemistry + Lab </li> <li>Two semesters of Organic Chemistry + Lab </li> <li> Two semesters of Physics + Lab </li> <li> 1 Semester of Psychology and Sociology</li> <br><br> If you wish to continue and are not yet overwhelmed, click next!" );
      })
+
+     $(".Medschool").click(function(){
+       $(".box").removeClass( "box-big" );
+       $(".box").addClass( "box-big" );
+       $(".box").html("Aaaaaalas, Medical School. This is where the fun really begins. My best avice is to not completely abandon your social life in Medical school if at all possible. You just came from the hustle and bustle of undergrad, so ease the transition by making a solid group of friends at your medical program. Some say that making friends outside of your program is the best way to ensure a work/life balance and that it eliminates the competitiveness in your friendships. <br> <br> One good thing about medical school is that it really is only 'school school' for the first two years. The next two will be spent in rotations to really expose you to different elements of the field. If you still have any energy (unlikely) then it is now time to obtain that sought after medical degree. Click the next button!" );
+     })
+
+     $(".End").click(function(){
+       $(".box").removeClass( "box-big" );
+       $(".box").addClass( "box-big" );
+       $(".box").html("So you've done it! Or you think you've done it. You now finished medical school! BUT WAIT, you still have to complete a 3-4 year residency program. You can now wear the white coat and treat your very first patients, but the training really never stops. <br> <br> <br> Even though you maybe done with school, you have truly have embarked on a lifelong journey of service and leadership! Enjoy!" );
+     })
+
      $("#jane").click(function(){
        $(".box").hide();
        $("#pup").attr("src","images/lep.jpg");
@@ -41,6 +67,11 @@
      $("#mary").click(function(){
        $(".box").show();
      });
+     $(document).ready(function(){
+    $("button").click(function(){
+        $("#test").hide();
+    });
+});
      // $("#dummyimage").attr("src","http://dummyimage.com/450x255/");
       });
  </script>
