@@ -60,20 +60,17 @@ To continue, use the next arrows at the bottom of the screen, or you can skip ar
        $(".box").html("So you've done it! Or you think you've done it. You now finished medical school! BUT WAIT, you still have to complete a 3-4 year residency program. You can now wear the white coat and treat your very first patients, but the training really never stops. <br> <br> <br> Even though you maybe done with school, you have truly have embarked on a lifelong journey of service and leadership! Enjoy!" );
      })
 
-     $("#jane").click(function(){
+     $(".Hide").click(function(){
        $(".box").hide();
        $("#pup").attr("src","images/lep.jpg");
      });
-     $("#mary").click(function(){
+     $(".Show").click(function(){
        $(".box").show();
      });
-     $(document).ready(function(){
-    $("button").click(function(){
-        $("#test").hide();
-    });
-});
 
-      });
+
+    });
+
  </script>
   </body>
 </html>
